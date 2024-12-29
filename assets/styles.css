@@ -625,7 +625,7 @@ select {
 }
 
 .search-btn {
-  backgorund: var(--primary-100);
+  background: var(--primary-100);
   color: var(--neutral-100);
   display: flex;
   justify-content: center;
@@ -655,3 +655,21 @@ select {
   pointer-events: none;
   z-index: -2;
 }
+
+/* ---------- PROPERTY ---------- */
+
+.property { padding-block-start: 60px; }
+
+.property .section-text {
+  margin-block: 8px 16px;
+  color: var(--neutral-30);
+}
+
+.property-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* ---------- FEATURE ---------- */
+
