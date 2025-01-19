@@ -1026,3 +1026,163 @@ select {
 }
 
 /* ============================ Responsive for screens larger than 992px ============================ */
+
+@media (min-width: 992px) {
+
+  /* Custom property */
+
+  :root {
+
+    /* Typography */
+
+    /* Font size */
+    --fs-body-large: 1.8rem;
+
+    /* Line height */
+    --lh-body-large: 32px;
+
+  }
+
+  /* Reused style */
+
+  .container {
+    max-width: 950px;
+  }
+
+  /* Header */
+
+  .nav-toggle-btn {
+    display: none;
+  }
+
+  .navbar,
+  .navbar-list,
+  .navbar-wrapper {
+    all: unset;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar,
+  .navbar-list {
+    flex-grow: 1;
+  }
+
+  .navbar-list {
+    justify-content: center;
+  }
+
+  .navbar-link,
+  .btn-link {
+    color: var(--neutral-80);
+    line-height: 48px;
+  }
+
+  .navbar-link {
+    padding: 0 24px;
+  }
+
+  :is(.navbar-link, .btn-link):is(:hover, :focus-visible),
+  .navbar-link.active {
+    color: var(--neutral-100);
+  }
+
+  .navbar-link.active {
+    position: relative;
+  }
+
+  .navbar-link.active::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+    bottom: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: var(--radius-circle);
+    background-color: var(--neutral-100);
+  }
+
+  .btn-link {
+    color: var(--neutral-100);
+    border: none;
+    padding: 0;
+  }
+
+  .navbar .btn {
+    min-width: max-content;
+  }
+
+  .navbar-wrapper {
+    gap: 24px;
+  }
+
+  /* Hero */
+
+  .hero .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+
+  .hero-content {
+    grid-column: 1 / 7;
+  }
+
+  .search-bar {
+    min-width: max-content;
+    grid-template-columns: 160px 220px 1fr max-content;
+  }
+
+  .search-item .search-item-field {
+    height: 84px;
+    padding-inline: 24px;
+    padding-block-end: 16px;
+  }
+
+  .search-item .label {
+    top: 16px;
+    left: 24px;
+  }
+
+  .search-item .material-symbols-rounded {
+    display: block;
+    right: 24px;
+  }
+
+  .hero-banner {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    max-width: 720px;
+    z-index: -1;
+  }
+
+  /* Property */
+
+  .property .section-text {
+    max-width: 640px;
+  }
+
+  /* Feature */
+
+  .feature-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-banner {
+    aspect-ratio: auto;
+  }
+
+  .feature-2 .feature-banner {
+    order: 1;
+  }
+
+}
