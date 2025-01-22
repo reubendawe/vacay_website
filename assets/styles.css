@@ -486,12 +486,6 @@ select {
     z-index: 4;
 }
 
-.header.active {
-    animation: slide-in 500ms ease forwards;
-    height: 72px;
-    background-color: var(--primary-40);
-}
-
 @keyframes slide_in {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(0); }
@@ -558,6 +552,15 @@ select {
 
   .navbar .btn { min-width: 100%; }
 
+  /* ---------- VIDEO CONTAINER ---------- */
+
+  .video-container {
+    width: 100%;
+    background-color: var(--bg-main);
+    margin-inline: auto;
+  }
+  
+
 /* ---------- HEADER ---------- */
 
 .hero-banner {
@@ -566,12 +569,18 @@ select {
 
 .hero {
   position: relative;
-  background-image: var(--gradient);
+  background-color: var(--bg-main);
   color: var(--neutral-90);
   padding-block: 130px 60px;
   overflow: hidden;
   isolation: isolate;
 }
+
+.background-clip {
+  width: 100%;
+  z-index: 9999;
+}
+
 
 .hero-title {
   color: var(--neutral-100);
@@ -633,7 +642,6 @@ select {
   height: 64px;
   padding-inline: 24px;
   gap: 12px;
-  border-radius: 12px;
   transition: var(--transition-duration-quick) var(--transition-easing-quick);
 }
 

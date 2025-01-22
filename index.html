@@ -25,26 +25,26 @@
             </a>
 
             <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
+                <ul class="navbar-list" id="home">
 
                     <li>
-                        <a href="#" class="navbar-link label-medium active">Home</a>
+                        <a href="#home" class="navbar-link label-medium active">Home</a>
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-link label-medium">Rent</a>
+                        <a href="#destinations" class="navbar-link label-medium">Destinations</a>
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-link label-medium">Sell</a>
+                        <a href="#deals" class="navbar-link label-medium">Deals</a>
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-link label-medium">Buy</a>
+                        <a href="#testimonials" class="navbar-link label-medium">Testimonials</a>
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-link label-medium">About</a>
+                        <a href="#contact" class="navbar-link label-medium">Contact</a>
                     </li>
 
                 </ul>
@@ -68,45 +68,61 @@
 
     <main>
         <article>
+            
+            
+            <div class="video-container">
+
+                <div class="video-content">
+
+                    <video autoplay loop muted plays-inline class="background-clip">
+                        <source src="./assets/images/hero-video.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+            </div>
+
+           
+
 
     <!-- Hero Section -->
 
              <section class="hero">
                 <div class="container">
 
+                
                     <div class="hero-content">
-
                         <h1 class="headline-large hero-title">Find a place where you can be yourself.</h1>
 
                         <p class="body-large hero-text">
-                            If you're looking for a place where you can be yourself, don't give up. Keep searching until you find a place that feels like home.
+                            Traveling on a budget doesn't mean compromising on adventure. With Vacay, you can explore stunning destinations and create unforgettable memories without breaking the bank.
                         </p>
 
                         <form action="./" method="get" class="search-bar">
 
                             <label class="search-item">
-                                <span class="label-medium label">Want to</span>
+                                <span class="label-medium label">Type</span>
 
-                                <select name="want-to" class="search-item-field body-medium">
-                                       <option value="buy" selected>Buy</option>
-                                       <option value="sell" selected>Sell</option>
-                                       <option value="rent" selected>Rent</option>
+                                <select name="type" class="search-item-field body-medium">
+                                       <option value="buy" selected>Flights</option>
+                                       <option value="sell" selected>Hotels</option>
+                                       <option value="rent" selected>Activities</option>
+                                       <option value="rent" selected>Packages</option>
                                 </select>
 
                                 <span class="material-symbols-rounded" aria-hidden="true">real_estate_agent</span>
                             </label>
 
                             <label class="search-item">
-                                <span class="label-medium label">Property type</span>
+                                <span class="label-medium label">Destinations</span>
 
-                                <select name="property-type" class="search-item-field body-medium">
+                                <select name="destinations" class="search-item-field body-medium">
                                     <option value="any" selected>Any</option>
-                                    <option value="houses" selected>Houses</option>
-                                    <option value="apartments" selected>Apartments</option>
-                                    <option value="villa" selected>Villa</option>
-                                    <option value="townhome" selected>Townhome</option>
-                                    <option value="bungalow" selected>Bungalow</option>
-                                    <option value="loft" selected>Loft</option>
+                                    <option value="europe" selected>Europe</option>
+                                    <option value="north-america" selected>North America</option>
+                                    <option value="south-america" selected>South America</option>
+                                    <option value="asia" selected>Asia</option>
+                                    <option value="oceania" selected>Oceania</option>
+                                    <option value="africa" selected>Africa</option>
                                 </select>
 
                                 <span class="material-symbols-rounded" aria-hidden="true">gite</span>
@@ -140,7 +156,7 @@
 
              <!-- Listing Section -->
 
-             <section class="section property" aria-labelledby="property-label">
+             <section class="section property" aria-labelledby="property-label" id="destinations">
                 <div class="container">
                     <div class="title-wrapper">
 
@@ -601,7 +617,7 @@
 
              <!-- Feature Section -->
 
-             <section class="section feature" aria-labelledby="feature-label">
+             <section class="section feature" aria-labelledby="feature-label" id="deals">
                 <div class="container">
 
                     <figure class="feature-banner">
@@ -697,7 +713,7 @@
 
              <!-- Video -->
 
-             <section class="section video">
+             <section class="section video" id="testimonials">
                 <div class="container">
 
                     <div class="video-card">
@@ -910,7 +926,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
 
         <div class="footer-top">
             <div class="container">
