@@ -552,31 +552,39 @@ select {
 
   .navbar .btn { min-width: 100%; }
 
-  /* ---------- VIDEO CONTAINER ---------- */
+/* ---------- VIDEO CONTAINER ---------- */
 
-  .vid-hero {
+.video-hero {
+  width: 100%;
+  height: 100vh;
   position: relative;
-  background-color: black;
-  color: var(--neutral-90);
-  padding-block: 130px 60px;
-  overflow: hidden;
-  isolation: isolate;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
- .vid-container {
-  padding-inline: 16px;
-    max-width: 580px;
-    width: 100%;
-    margin-inline: auto;
-<<<<<<< HEAD
-    overflow: hidden;
-    isolation: isolate;
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+      width: 100%;
+      height: auto;
   }
-=======
- }
- 
->>>>>>> bd5c87af1eba3878dbb45e72eec0c48b761b8728
-  
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+      width: auto;
+      height: 100%;
+  }
+}
+
 
 /* ---------- HEADER ---------- */
 
@@ -737,7 +745,7 @@ select {
 .video-card {
   height: 260px;
   /* border-radius: 32px; */
-  background: linear-gradient(0deg, #0000004D, #0000004d), url('../assets/video.jpg');
+  background: linear-gradient(0deg, #0000004D, #0000004d), url('../assets/images/hero-video.mp4');
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
