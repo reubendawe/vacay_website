@@ -2,12 +2,12 @@
     --white: #FFFFFF;
     --primary-100: #F26F63;
     --bg-main: #F26F63;
-    --primary-90: #1E6DE5;
-    --primary-80: #1B61CC;
-    --primary-70: #1755B2;
-    --primary-40: #0D3166;
-    --primary-20: #071833;
-    --secondary-100: #21FFFF;
+    --primary-90: #2C3E50;
+    --primary-80: #2C3E50;
+    --primary-70: #2C3E50;
+    --primary-40: #2C3E50;
+    --primary-20: #2C3E50;
+    --secondary-100: #F26F63;
     --secondary-20: #073333;
     --neutral-100: #FAFCFF;
     --neutral-98: #F2F5FA;
@@ -28,6 +28,12 @@
     --gradient: linear-gradient(270deg, #2f3e4f 0%, #F26F63 100%);
 
 /* Font family */
+
+.lato-light {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+};
 
 /* Font size */
 
@@ -148,7 +154,7 @@ select {
   }
   
   html {
-    font-family: var(--font-primary);
+    font-family: "Lato", serif;
     font-size: var(--fs-base);
     scroll-behavior: smooth;
   }
@@ -391,6 +397,7 @@ select {
     background-color: var(--secondary-100);
     border-radius: var(--radius-small);
     box-shadow: var(--shadow-3);
+    color: var(--white);
   }
 
   /**
@@ -1043,6 +1050,8 @@ select {
   .video-card {
     height: 400px;
   }
+
+
 
   .play-btn {
     width: 96px;
