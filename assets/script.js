@@ -36,22 +36,28 @@ $toggleBtns.forEach($toggleBtn => {
 
 // Modals
 
-let modal = document.getElementById('myModal'); // Gets the modal from HTML
+// Get the modal
+let modal = document.getElementById("myModal");
 
-let btn = document.getElementById('myBtn'); // Gets the button from HTML
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
 
-let span = document.getElementsByClassName('close') [0]; // Gets span from HTML
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("closeModal")[0];
 
-        btn.onclick = function() {
-            modal.style.display = 'block'; // User clicks on button, it opens modal
-        }
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-        span.onclick = function() {
-            modal.style.display = 'none'; // User clicks the span (X), it closes modal
-        }
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = 'none'; // Any click outside of modal will close it
-            }
-        }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
