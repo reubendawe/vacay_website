@@ -966,6 +966,14 @@ select {
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
+.modal-h2 {
+  padding-top: 40px;
+}
+
+.modal-list {
+  padding-bottom: 40px;
+}
+
 /* The Close Button */
 .closeModal {
   color: #aaa;
